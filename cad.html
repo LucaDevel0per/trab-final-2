@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulário de Aluguel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="reset"],
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Alugar</h1>
+    <form name="frmCliCad" method="post" action="cad.jsp">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="rg">RG:</label>
+            <input type="text" id="rg" name="rg" required>
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+            
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" name="celular" required>
+            
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+            
+            <label for="Endereco">Endereço:</label>
+            <input type="text" id="Endereco" name="Endereco" required>
+            
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento">
+            
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+            
+            <label for="Cidade">Cidade:</label>
+            <input type="text" id="Cidade" name="Cidade" required>
+            
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            
+            <label for="uf">UF:</label>
+            <input type="text" id="uf" name="uf" required>
+            
+            <label for="Cnh">CNH:</label>
+            <input type="text" id="Cnh" name="Cnh" required>
+        </p>
+
+        <input type="reset" name="limpa" value="Limpar">
+        <input type="submit" name="envia" value="Salvar">
+    </form>
+</body>
+
+</html>
